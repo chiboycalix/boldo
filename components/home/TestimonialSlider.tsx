@@ -63,7 +63,7 @@ const TestimonialSlider = () => {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-lg lg:text-2xl text-white lg:basis-[50%] basis-[80%]"
+            className="text-lg lg:text-xl text-white lg:basis-[50%] basis-[80%]"
           >
             An enterprise template to ramp up your company website
           </motion.h2>
@@ -71,14 +71,14 @@ const TestimonialSlider = () => {
           <div className="flex gap-4 justify-end mt-8 flex-1">
             <button
               onClick={handlePrev}
-              className="p-4 bg-white rounded-full hover:bg-mint-300 transition-colors"
+              className="p-2 bg-white rounded-full hover:bg-mint-300 transition-colors"
               aria-label="Previous testimonial"
             >
               <ArrowLeft className="w-6 h-6" />
             </button>
             <button
               onClick={handleNext}
-              className="p-4 bg-white rounded-full hover:bg-mint-300 transition-colors"
+              className="p-2 bg-white rounded-full hover:bg-mint-300 transition-colors"
               aria-label="Next testimonial"
             >
               <ArrowRight className="w-6 h-6" />
@@ -95,7 +95,7 @@ const TestimonialSlider = () => {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -100 }}
                 transition={{ duration: 0.3 }}
-                className="flex items-start justify-between gap-8 min-w-[800px]"
+                className="flex items-start justify-between gap-8"
               >
                 {[0, 1, 2].map((offset) => {
                   const index = (currentIndex + offset) % testimonials.length;
