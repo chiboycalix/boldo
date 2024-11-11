@@ -107,7 +107,7 @@ const TestimonialSlider = () => {
                       className="bg-white rounded-2xl p-8 shadow-lg"
                     >
                       <p className="lg:text-lg text-md text-gray-800 mb-8">
-                        "{testimonial.quote}"
+                        &ldquo;{testimonial.quote}&rdquo;
                       </p>
                       <div className="flex lg:items-center items-start gap-4 sm:flex-row flex-col">
                         <Image src={testimonial.authorPhoto} alt="author Image" className='w-12 h-12 rounded-full' />
